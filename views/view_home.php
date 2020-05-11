@@ -6,6 +6,10 @@
     <title>Endeavor Mentors' Day Live</title>
 </head>
 <body class="main-section">
-    Hola
+    <form action="" method="post">
+        <label for="email">Correo electrónico</label>
+        <input type="email" name="email" id="" required>
+        <button type="submit">Ingresar</button>
+    </form>
 </body>
 </html>

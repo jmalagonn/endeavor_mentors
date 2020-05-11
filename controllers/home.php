@@ -8,4 +8,8 @@ class Home extends Controller{
     function render(){
         $this->view->render('view_home');
     }
+
+    function logIn(){
+        $email = $_POST['email'];
+    }
 }
