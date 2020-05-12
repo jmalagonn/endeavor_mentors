@@ -8,4 +8,6 @@ require_once 'libs/model.php';
 
 require_once 'config/config.php';
 
+require_once 'services/services.php';
+
 $app = new App();

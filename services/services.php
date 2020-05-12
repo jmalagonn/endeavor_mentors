@@ -2,17 +2,17 @@
 
 include_once 'models/user.php';
 
-class homeModel extends Model{
+class Services extends Model {
     public function __construct(){
         parent::__construct();
     }
-
-    public function consult($email, $id){
+    
+    public function getUser($data){
         $items = [];
-        $query = $this->db->connect()->prepare('SELECT * FROM users WHERE Email = :email AND id = :id');
+        $query = $this->db->connect()->prepare('SELECT * FROM users WHERE Email = :email');
     
         try{
-            $query->execute([':email' => $email, ':id' => $id]);
+            $query->execute([':email' => $data]);
     
             while($row = $query->fetch()){
                 $item = new User();
