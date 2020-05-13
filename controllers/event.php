@@ -18,5 +18,6 @@ class Event extends Controller{
         
         $sessions = $this->model->getSessions($user);
         $this->view->sessions = $sessions;
+        $this->view->user = $user;
     }
 }

@@ -1,0 +1,134 @@
+* {
+    --light-teal: rgba(129, 208, 214, 1);
+    --light-red: rgba(255, 102, 102, 1);
+    --dark-theme: rgba(26, 26, 26, 1);
+}
+
+label{
+    margin-top: .5rem;
+}
+
+.container-home{
+    min-height: 100vh;
+    background: url(../images/bg2.png) center no-repeat rgba(20, 20, 20, 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+}
+
+.logo-home{
+    padding: 1rem;
+    width: 100%;
+}
+
+.welcome-title{
+    color: var(--light-teal);
+}
+
+.button-block{
+    width: 100%;
+    text-align: center;
+}
+
+.login-button{
+    background: var(--light-red); 
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    padding: .5rem 1rem;
+    margin: auto;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.normal-p{
+    text-align: center;
+}
+
+.form-control{
+    margin: .5rem 0;
+}
+
+.form-control:focus{
+    border-color: var(--light-teal);
+    box-shadow: 0 0 0 0.1rem var(--light-teal); 
+}
+
+.promo-text{
+    color: var(--light-teal);
+    font-size: large;
+    font-weight: bold;
+}
+
+.icons-home{
+    max-width: 20rem;
+}
+
+.img-thumb-live{
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-event-section{
+    background: url(../images/mainbg.png) center no-repeat rgba(5, 5, 5, 1);
+    background-size: cover;
+    color: white;
+}
+
+.main-header{
+    padding: 1rem;
+}
+
+.logo-main-header{
+    width: 15rem;
+    margin: auto;
+}
+
+.instruction-number{
+    width: 100%;
+    max-width: 50px;
+    margin: auto;
+}
+
+.event-card{
+    text-align: center;
+    padding: 1rem;
+    background: rgba(100, 100, 100, .2);
+}
+
+.button-event{
+    background: var(--light-red);
+    color: var(--dark-theme);
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.button-event:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.area-event{
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--light-teal);
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.event-hour{
+    margin: 0;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.name-event{
+    margin: 0;
+    padding-bottom: 1rem;
+}
