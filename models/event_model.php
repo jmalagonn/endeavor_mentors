@@ -20,20 +20,19 @@ class eventModel extends Model {
     public function getSessions($data){
         switch($data[0]->type){
             case 1:
-                $sessions = $this->getAllSessions();
-                var_dump($sessions);                             
+                $sessions = $this->getAllSessions();                   
                 break;
             case 2:
                 $sessions = $this->getStaffSession($data);
-                var_dump($sessions);
                 break;
             case 3:
                 $sessions = $this->getAttendeeSession($data);
-                var_dump($sessions);
                 break;
             case 4:
                 break;
         }
+
+        return $sessions;
     }
 
     public function getAllSessions(){

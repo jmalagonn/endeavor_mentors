@@ -16,6 +16,7 @@ class Event extends Controller{
     function main(){
         $user = $this->model->getUser($_SESSION['login_user']);
         
-        $this->model->getSessions($user);
+        $sessions = $this->model->getSessions($user);
+        $this->view->sessions = $sessions;
     }
 }

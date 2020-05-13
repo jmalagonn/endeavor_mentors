@@ -5,6 +5,7 @@ session_start();
 class Home extends Controller{
     function __construct(){
         parent::__construct();
+        $this->view->msg = "";
     }
 
     function render(){
@@ -22,7 +23,9 @@ class Home extends Controller{
             header("location: ".constant('URL')."event");   
         }else{
             $msg = "Usuario no registrado";
-            echo $msg;
         }
+
+        $this->view->msg = $msg;
+        $this->render();
     }
 }
