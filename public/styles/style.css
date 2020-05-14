@@ -198,3 +198,17 @@ img{
     border-bottom: 5px solid var(--light-red);
     padding-bottom: .5rem;
 }
+
+.social-media-list li{
+    display: inline;
+}
+
+.social-media-icon{
+    padding: 0 .5rem;
+}
+
+.social-media-icon img{
+    width: 2rem;
+    max-height: 50px;
+    max-width: 50px;
+}

@@ -94,9 +94,16 @@
                 </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                
+        <div class="row pb-4">
+            <div class="col text-center social-networks">
+                <ul class="social-media-list">
+                    <li><a class="social-media-icon" href="https://endeavor.org.co/" target="_blank"><img src="<?php echo constant('URL')?>public/images/socialMedia/endeavorE.png" alt=""></a></li>
+                    <li><a class="social-media-icon" href="https://www.facebook.com/endeavorcolombia/" target="_blank"><img src="<?php echo constant('URL')?>public/images/socialMedia/facebook.png" alt=""></a></li>
+                    <li><a class="social-media-icon" href="https://twitter.com/EndeavorCol" target="_blank"><img src="<?php echo constant('URL')?>public/images/socialMedia/twitter.png" alt=""></a></li>
+                    <li><a class="social-media-icon" href="https://www.youtube.com/channel/UCABxynec_xVkaWMtIk0c-Eg" target="_blank"><img src="<?php echo constant('URL')?>public/images/socialMedia/youtube.png" alt=""></a></li>
+                    <li><a class="social-media-icon" href="https://www.linkedin.com/company/endeavor-colombia/" target="_blank"><img src="<?php echo constant('URL')?>public/images/socialMedia/linkedin.png" alt=""></a></li>
+                    <li><a class="social-media-icon" href="https://www.instagram.com/endeavorcolombia/" target="_blank"><img src="<?php echo constant('URL')?>public/images/socialMedia/instagram.png" alt=""></a></li>
+                </ul>
             </div>
         </div>
         <div class="row pb-5">
