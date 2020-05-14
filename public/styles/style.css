@@ -132,3 +132,69 @@ label{
     margin: 0;
     padding-bottom: 1rem;
 }
+
+.log-out{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    color: white;
+}
+
+.log-out:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.featured-ally-img{
+    width: 100%;
+}
+
+.swiper-slide{
+    text-align: center;
+}
+
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.swiper-container{
+    padding: 0 1rem !important;
+}
+
+.featured-allies{
+    padding: 3rem 0;
+    background: linear-gradient(.25turn, rgba(255, 102, 102, .4), rgba(129, 208, 214, .4));
+}
+
+.green{
+    color: var(--light-teal);
+}
+
+.featured-allies-row{
+    max-width: 100%;
+}
+
+.logo-footer{
+    max-width: 20rem;
+    margin: auto;
+}
+
+footer{
+    background: linear-gradient(.25turn, rgba(255, 255, 255, .3), rgba(0, 0, 0, .8));
+    padding: 2rem 0;
+}
+
+img{
+    width: 100%;
+}
+
+.title-green{
+    border-bottom: 5px solid var(--light-teal);
+    padding-bottom: .5rem;
+}
+
+.title-red{
+    border-bottom: 5px solid var(--light-red);
+    padding-bottom: .5rem;
+}

@@ -20,4 +20,9 @@ class Event extends Controller{
         $this->view->sessions = $sessions;
         $this->view->user = $user;
     }
+
+    function logOut(){
+        unset($_SESSION['login_user']);
+        header('location:'.constant('URL'));
+    }
 }

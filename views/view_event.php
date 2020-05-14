@@ -5,47 +5,70 @@
         <div class="logo-main-header">
             <img src="<?php echo constant('URL')?>public/images/LogoBlanco.svg" alt="Endeavor Mentors' Live">
         </div>
+        <a href="<?php echo constant('URL') ?>/event/logOut" class="log-out">Cerrar sesión</a>
     </header>
     <div class="container">
-        <div class="row justify-content-center pt-5 pb-5">
-            <div class="col-1 text-center">
-                <img class="instruction-number" src="<?php echo constant('URL')?>public/images/one.png" alt="">
-            </div>
-            <div class="col-9">
-                <p class="normal-text">
-                    ¡Acabas de entrar a nuestro Mentors´ Day Live!<br>Para aprovechar mejor esta experiencia, mira con atención el siguiente video que te explicará cómo acceder a tus sesiones.
-                </p>
+        <div class="row justify-content-center pt-5 pb-3">
+            <div class="col text-center">
+                <h2 class="normal-text">¡Ya estás en <span class="green">MENTORS' DAY </span>LIVE!</h2>
+                <p class="normal-text pt-3">Para aprovechar al máximo esta experiencia, te invitamos a ver con atención el siguiente video</p>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pb-5">
             <div class="col-lg-6 col-md-10">
                 <img src="https://via.placeholder.com/1920x1080" alt="" class="img-thumb-live">
             </div>
         </div>
-        <div class="row justify-content-center pt-5 pb-4">
-            <div class="col-1 text-center">
-                <img class="instruction-number" src="<?php echo constant('URL')?>public/images/two.png" alt="">
+    </div>
+    <div class="container-fluid featured-allies">
+        <div class="row featured-allies-row">
+            <div class="col-12">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="featured-ally-img" src="<?php echo constant('URL')?>public/images/allies/FMSD Blanco.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="featured-ally-img" src="<?php echo constant('URL')?>public/images/allies/FBD Blanco.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="featured-ally-img" src="https://endeavor.org.co/wp-content/uploads/2020/05/Finsocial-Blanco.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="featured-ally-img" src="https://endeavor.org.co/wp-content/uploads/2020/05/Uni-Norte-Blanco.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="featured-ally-img" src="https://endeavor.org.co/wp-content/uploads/2020/05/SAP-Blanco.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="featured-ally-img" src="https://endeavor.org.co/wp-content/uploads/2020/05/Eventtia-Blanco.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-9">
-                <p class="normal-text">
-                    Estas son las sesiones en las que estás inscrito.<br>No olvides repasar los horarios para ingresar a la hora indicada.
-                </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center pt-5 pb-4">
+            <div class="col">
+                <h2 class="title-red">SESIONES</h2>
+                <p class="pt-3">Ten presente los horarios para ingresar a la hora indicada a cada sesión. Una vez termine regresa aquí para acceder a la siguiente mentoría.</p>
             </div>
         </div>        
         <div class="row justify-content-center">
         <?php $i = 0; foreach($this->sessions as $session ){ ?>
-            <div class="col-sm-4 pt-1 pb-1">
+            <div class="col-md-4 col-sm-6 pt-1 pb-1">
                 <div class="event-card h-100">
                 <?php if($this->user[0]->type === 3){
                     switch($i){
                         case 0:
-                            echo '<p class="event-hour">9:00 A.M. - 10:00 A.M.</p>';
+                            echo '<p class="event-hour">Sesión 1:<br>9:00 A.M. - 10:00 A.M.</p>';
                             break;
                         case 1:
-                            echo '<p class="event-hour">10:10 A.M. - 11:10 A.M.</p>';
+                            echo '<p class="event-hour">Sesión 2:<br>10:10 A.M. - 11:10 A.M.</p>';
                             break;
                         case 2:
-                            echo '<p class="event-hour">11:20 A.M. - 12:30 P.M.</p>';
+                            echo '<p class="event-hour">Sesión 3:<br>11:20 A.M. - 12:30 P.M.</p>';
                             break;
                     }
                 }?>
@@ -56,37 +79,41 @@
             </div>
         <?php $i++; }?>
         </div>
-        <div class="row justify-content-center pt-4 pb-5">
-            <div class="col-1 text-center">
-                <img class="instruction-number" src="<?php echo constant('URL')?>public/images/three.png" alt="">
+        <div class="row pt-5 pb-5">
+            <div class="col-12 pb-4">
+                <h2 class="title-green">RECOMENDACIONES IMPORTANTES</h2>
             </div>
-            <div class="col-9">
-                <p class="normal-text">
-                    Una vez termine cada sesión, regresa aquí para ver la siguiente.
-                </p>
-            </div>
-        </div>
-        <div class="row justify-content-center pb-5">
-            <div class="col-1 text-center">
-                <img class="instruction-number" src="<?php echo constant('URL')?>public/images/four.png" alt="">
-            </div>
-            <div class="col-9">
-                <p class="normal-text">
-                    No olvides calificar cada mentoría, aparecerá una breve encuesta apenas termina la sesión. Es la forma de conocer tu opinión y mejorar nuestros eventos.
-                </p>
+            <div class="col">
+                <ul>
+                    <li>Accede desde un portátil o un equipo de escritorio para tener una mejor experiencia.</li>
+                    <li>Comprueba tu conexión a internet. Tener tu equipo conectado por medio de un cable de red garantizará una mayor estabilidad de la señal.</li>
+                    <li>Ten a la mano una libreta para tomar nota de cada lección. Te recomendamos también tener listas tus preguntas para los mentores.</li>
+                    <li>No olvides calificar cada mentoría, aparecerá una breve encuesta apenas termine la sesión. Es la forma de conocer tu opinión y mejorar nuestros eventos.</li>
+                    <li>Tendrás 10 minutos de receso entre las sesiones para tomar un respiro o ir por un café. ¡No te pierdas la siguiente mentoría!</li>
+                    <li>Comparte en redes sociales los mejores consejos que recibiste de los Mentores Endeavor con el #MentorsDayLive. ¡Tendremos sorpresas para quienes compartan su experiencia!</li>
+                </ul>
             </div>
         </div>
-        <div class="row justify-content-center pb-5">
-            <div class="col-1 text-center">
-                <img class="instruction-number" src="<?php echo constant('URL')?>public/images/five.png" alt="">
+        <div class="row">
+            <div class="col">
+                
             </div>
-            <div class="col-9">
-                <p class="normal-text">
-                    Comparte en redes sociales los mejores consejos que recibiste de los Mentores Endeavor con el #MentorsDayLive.<br>¡Tendremos sorpresas para quienes compartan su experiencia!
-                </p>
+        </div>
+        <div class="row pb-5">
+            <div class="col-12 pb-5">
+                <h2 class="title-red">ALIADOS DE DIFUSIÓN</h2>
+            </div>
+            <div class="col-12">
+                <img src="<?php echo constant('URL')?>public/images/allies/Aliados difusión.png" alt="">
             </div>
         </div>
     </div>
+    <footer class="text-center">
+        <p class="text-center m-0">Un evento de:</p>
+        <img src="<?php echo constant('URL')?>public/images/Logo Endeavor Blanco.png" alt="" class="logo-footer">
+    </footer>
 </section>
 
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="<?php echo constant('URL') ?>public/js/events.js"></script>
 <?php require 'views/footer.php' ?>
