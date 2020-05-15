@@ -22,7 +22,7 @@ class Home extends Controller{
             $_SESSION['login_user'] = $users[0]->email;
             header("location: ".constant('URL')."event");   
         }else{
-            $msg = "Usuario no registrado";
+            $msg = "*Usuario no registrado";
         }
 
         $this->view->msg = $msg;

@@ -51,8 +51,8 @@
     <div class="container">
         <div class="row justify-content-center pt-5 pb-4">
             <div class="col">
-                <h2 class="title-red">SESIONES</h2>
-                <p class="pt-3">Ten presente los horarios para ingresar a la hora indicada a cada sesión. Una vez termine regresa aquí para acceder a la siguiente mentoría.</p>
+                <h2 class="title-red">TUS SESIONES</h2>
+                <p class="pt-3">Ten presente que cada sesión tiene una hora indicada de ingreso. Una vez finalice cada mentoría regresa aquí para acceder a la siguiente.</p>
             </div>
         </div>        
         <div class="row justify-content-center">
@@ -68,12 +68,13 @@
                             echo '<p class="event-hour">Sesión 2:<br>10:10 A.M. - 11:10 A.M.</p>';
                             break;
                         case 2:
-                            echo '<p class="event-hour">Sesión 3:<br>11:20 A.M. - 12:30 P.M.</p>';
+                            echo '<p class="event-hour">Sesión 3:<br>11:20 A.M. - 12:20 P.M.</p>';
                             break;
                     }
                 }?>
                 <p class="area-event"><?php echo $session->area; ?></p>
                 <p class="name-event"><?php echo $session->name;?></p>
+                <p class="name-event">Contraseña: password</p>
                 <a class="button-event" href="<?php echo $session->link; ?>" target="_blank">Entrar</a>
                 </div>
             </div>
@@ -90,12 +91,12 @@
                     <li>Ten a la mano una libreta para tomar nota de cada lección. Te recomendamos también tener listas tus preguntas para los mentores.</li>
                     <li>No olvides calificar cada mentoría, aparecerá una breve encuesta apenas termine la sesión. Es la forma de conocer tu opinión y mejorar nuestros eventos.</li>
                     <li>Tendrás 10 minutos de receso entre las sesiones para tomar un respiro o ir por un café. ¡No te pierdas la siguiente mentoría!</li>
-                    <li>Comparte en redes sociales los mejores consejos que recibiste de los Mentores Endeavor con el #MentorsDayLive. ¡Tendremos sorpresas para quienes compartan su experiencia!</li>
+                    <li>Comparte en redes sociales los mejores consejos que recibiste de los Mentores Endeavor con el #MentorsDay. ¡Tendremos sorpresas para quienes compartan su experiencia!</li>
                 </ul>
             </div>
         </div>
-        <div class="row pb-4">
-            <div class="col text-center social-networks">
+        <div class="row pb-4 justify-content-center">
+            <div class="col-12 text-center social-networks">
                 <ul class="social-media-list">
                     <li><a class="social-media-icon" href="https://endeavor.org.co/" target="_blank"><img src="<?php echo constant('URL')?>public/images/socialMedia/endeavorE.png" alt=""></a></li>
                     <li><a class="social-media-icon" href="https://www.facebook.com/endeavorcolombia/" target="_blank"><img src="<?php echo constant('URL')?>public/images/socialMedia/facebook.png" alt=""></a></li>
@@ -105,8 +106,12 @@
                     <li><a class="social-media-icon" href="https://www.instagram.com/endeavorcolombia/" target="_blank"><img src="<?php echo constant('URL')?>public/images/socialMedia/instagram.png" alt=""></a></li>
                 </ul>
             </div>
+            <div class="col-md-6">
+                <p class="normal-text text-center">
+                    ¿Tienes problemas? Comunícate con nosotros:     <a class="qa-link" href="https://wa.me/573134945050" target="_blank"><img class="qa-icon" src="<?php echo constant('URL')?>public/images/socialMedia/whatsapp.png" alt=""></a></p>
+            </div>
         </div>
-        <div class="row pb-5">
+        <div class="row pb-5 justify-content-center">
             <div class="col-12 pb-5">
                 <h2 class="title-red">ALIADOS DE DIFUSIÓN</h2>
             </div>

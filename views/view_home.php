@@ -8,9 +8,9 @@
     </div>
     <div class="row pt-3 pb-2">
         <div class="col text-center">
-            <h1 class="welcome-title">¡BIENVENIDO!</h1>
+            <h1 class="welcome-title">¡LLEGÓ EL DÍA!</h1>
             <p class="description-text-home pt-1">
-                Inicia sesión con el e-mail y número de identificación con la que realizaste el registro.
+            Inicia sesión con el email y el número de identificación o NIT con el que realizaste el registro.<br>(Si te registraste con un NIT, ingresa solo los 9 dígitos sin código de verificación).
             </p>
         </div>
     </div>
@@ -23,7 +23,7 @@
                     <button type="submit" class="mt-3 login-button">Ingresar</button>
                 </div>
             </form>
-            <p class="normal-p">
+            <p class="normal-p m-0 red">
                 <?php echo $this->msg ?>
             </p>
         </div>

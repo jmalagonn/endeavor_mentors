@@ -212,3 +212,12 @@ img{
     max-height: 50px;
     max-width: 50px;
 }
+
+.red{
+    color: var(--light-red);
+}
+
+.qa-icon{
+    max-width: 2rem;
+    margin: 0 1rem;
+}
