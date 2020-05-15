@@ -74,7 +74,7 @@
                 }?>
                 <p class="area-event"><?php echo $session->area; ?></p>
                 <p class="name-event"><?php echo $session->name;?></p>
-                <p class="name-event">Contraseña: password</p>
+                <p class="name-event">Contraseña:<?php echo $session->password;?></p>
                 <a class="button-event" href="<?php echo $session->link; ?>" target="_blank">Entrar</a>
                 </div>
             </div>

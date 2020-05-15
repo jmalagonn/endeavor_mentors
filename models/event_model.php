@@ -45,10 +45,11 @@ class eventModel extends Model {
             while($row = $query->fetch()){
                 $session = new Sessions();
 
-                $session->id   = $row['id'];
-                $session->area = $row['area'];
-                $session->name = $row['name'];
-                $session->link = $row['link'];
+                $session->id       = $row['id'];
+                $session->area     = $row['area'];
+                $session->name     = $row['name'];
+                $session->link     = $row['link'];
+                $session->password = $row['password'];
                 
                 array_push($sessions, $session);
             }
@@ -69,10 +70,11 @@ class eventModel extends Model {
             while($row = $query->fetch()){
                 $session = new Sessions();
 
-                $session->id   = $row['id'];
-                $session->area = $row['area'];
-                $session->name = $row['name'];
-                $session->link = $row['link'];
+                $session->id       = $row['id'];
+                $session->area     = $row['area'];
+                $session->name     = $row['name'];
+                $session->link     = $row['link'];
+                $session->password = $row['password'];
                 
                 array_push($sessions, $session);
             }
@@ -93,10 +95,11 @@ class eventModel extends Model {
             while($row = $query->fetch()){
                 $session = new Sessions();
 
-                $session->id   = $row['id'];
-                $session->area = $row['area'];
-                $session->name = $row['name'];
-                $session->link = $row['link'];
+                $session->id       = $row['id'];
+                $session->area     = $row['area'];
+                $session->name     = $row['name'];
+                $session->link     = $row['link'];
+                $session->password = $row['password'];
                 
                 array_push($sessions, $session);
             }

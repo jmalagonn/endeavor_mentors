@@ -5,4 +5,5 @@ class Sessions{
     public $area;
     public $name;
     public $link;
+    public $password;
 }
