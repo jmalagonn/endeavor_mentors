@@ -221,3 +221,8 @@ img{
     max-width: 2rem;
     margin: 0 1rem;
 }
+
+.video-section-mentors{
+    width: 90%;
+    height: auto;
+}

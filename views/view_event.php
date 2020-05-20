@@ -14,9 +14,11 @@
                 <p class="normal-text pt-3">Para aprovechar al máximo esta experiencia, te invitamos a ver con atención el siguiente video</p>
             </div>
         </div>
-        <div class="row justify-content-center pb-5">
-            <div class="col-lg-6 col-md-10">
-                <img src="https://via.placeholder.com/1920x1080" alt="" class="img-thumb-live">
+        <div class="row justify-content-center pb-5 text-center">
+            <div class="col-lg-8 col-md-10">
+                <video src="<?php echo constant('URL') ?>public/videos/mentors_video_promo.mp4" class="video-section-mentors" autoplay loop>
+                    Tu navegador no soporta video HTML.
+                </video>
             </div>
         </div>
     </div>
