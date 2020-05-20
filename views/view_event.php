@@ -15,8 +15,17 @@
             </div>
         </div>
         <div class="row justify-content-center pb-5 text-center">
+            <div class="col-12 pb-3" id="clock-container">
+                <h4 class="title-clock">El evento iniciará en</h4>
+                <ul id="clock-list">
+                    <li id="days"></li>
+                    <li id="hours"></li>
+                    <li id="minutes"></li>
+                    <li id="seconds"></li>
+                </ul>
+            </div>
             <div class="col-lg-8 col-md-10">
-                <video src="<?php echo constant('URL') ?>public/videos/mentors_video_promo.mp4" class="video-section-mentors" autoplay loop>
+                <video id="main-video-section" src="<?php echo constant('URL') ?>public/videos/mentors_video_promo.mp4" class="video-section-mentors" autoplay muted playsinline loop>
                     Tu navegador no soporta video HTML.
                 </video>
             </div>
