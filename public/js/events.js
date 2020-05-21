@@ -42,12 +42,11 @@ function change_video(){
     let seconds = today.getSeconds();
     let day = today.getDate();
 
-    let start_date = getTime("Wed May 27 2020 08:30:00 GMT-0500");
+    let start_date = getTime("Wed May 27 2020 08:35:00 GMT-0500");
 
     let url = window.location.origin;
 
     if( day === 27 && hour >= 12 && minutes >= 20  && seconds >= 0){
-        //$('#main-video-section').attr('src', url + '/endeavor_mentors/public/videos/prueba2.mp4');
         $('#nps_form').removeClass('hidden');
     }
 
