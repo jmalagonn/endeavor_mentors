@@ -16,7 +16,7 @@
         </div>
         <div class="row justify-content-center pb-5 text-center">
             <div class="col-12 pb-3" id="clock-container">
-                <h4 class="title-clock">El evento iniciará en</h4>
+                <h4 class="title-clock red">EL EVENTO INICIARÁ EN</h4>
                 <ul id="clock-list">
                     <li id="days"></li>
                     <li id="hours"></li>
@@ -28,6 +28,28 @@
                 <video id="main-video-section" src="<?php echo constant('URL') ?>public/videos/mentors_video_promo.mp4" class="video-section-mentors" autoplay muted playsinline loop>
                     Tu navegador no soporta video HTML.
                 </video>
+            </div>
+        </div>
+        <div class="row pb-4 justify-content-center hidden" id="nps_form">
+            <div class="col-lg-8 col-md-10 text-center">
+                <p class="text-center green"><b>TU OPINIÓN ES IMPORTANTE PARA NOSOTROS</b></p>
+                <form action="<?php echo constant('URL') ?>event/insert_nps" method="POST">
+                    <label for="recomendation">De 0 a 10 (siendo 0 el menor y 10 el mayor).<br>¿Con qué probabilidad recomendarías Mentors' Day a un amigo o a un compañero?</label>
+                    <div class="radio-buttons pb-3">
+                        <?php  for($i=0; $i<11; $i++){ ?>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="recomendation" value="<?php echo $i ?>" id="rec_<?php echo $i?>" required>
+                                <label for="rec_<?php echo $i ?>" class="form-check-label"><?php echo $i ?></label>
+                            </div>
+                        <?php }; ?>
+                    </div>
+                    <div class="form-group pb-2">
+                        <label for="nps_opinion">Cuéntanos tu opinión sobre el evento:</label>
+                        <textarea class="form-control" name="nps_opinion" id="nps_opinion"></textarea>
+                    </div>
+                    <button class="btn btn-light" type="submit">Enviar</button>
+                </form>
+                <p class="text-center pt-2"><?php echo $this->msg; ?></p>
             </div>
         </div>
     </div>

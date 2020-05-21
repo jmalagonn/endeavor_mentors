@@ -109,4 +109,24 @@ class eventModel extends Model {
             return null;
         }
     }
+
+    public function insert_nps($data = []){
+        $query_select = $this->db->connect()->prepare('SELECT * FROM nps WHERE email = :email');
+        $query_insert = $this->db->connect()->prepare('INSERT INTO `nps` (`email`, `score`, `opinion`) VALUES (:email, :score, :opinion)');
+        $query_udtade = $this->db->connect()->prepare('UPDATE `nps` SET `score` = :score, `opinion` = :opinion WHERE `email` = :email');
+
+        try{
+            $query_select->execute([':email' => $data[0][0]->email]);
+
+            if($query_select->fetch() === false ){
+                $query_insert->execute([':email' => $data[0][0]->email, ':score' => $data[1], ':opinion' => $data[2]]);
+                return true;
+            }else{
+                $query_udtade->execute([':email' => $data[0][0]->email, ':score' => $data[1], ':opinion' => $data[2]]);
+                return true;
+            }
+        }catch(PDOException $e){
+            return null;
+        }
+    }
 }

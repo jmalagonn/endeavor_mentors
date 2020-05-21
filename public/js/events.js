@@ -46,9 +46,10 @@ function change_video(){
 
     let url = window.location.origin;
 
-    /*if( hour === 11 && minutes === 54  && seconds === 0){
-        $('#main-video-section').attr('src', url + '/endeavor_mentors/public/videos/prueba2.mp4');
-    }*/
+    if( day === 27 && hour >= 12 && minutes >= 20  && seconds >= 0){
+        //$('#main-video-section').attr('src', url + '/endeavor_mentors/public/videos/prueba2.mp4');
+        $('#nps_form').removeClass('hidden');
+    }
 
     if(start_date.time > 0){
         $('#days').html('<p class="clock-card"><span class="clock-number">' + start_date.days + '</span><br><span class="label-clock">DD</span></p>');

@@ -256,3 +256,11 @@ img{
     font-size: initial;
     line-height: initial;
 }
+
+.form-check-label{
+    margin: 0;
+}
+
+.hidden{
+    display: none;
+}
